@@ -1,38 +1,94 @@
 .App {
-  text-align: center;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .Tracker {
+} */
+
+.AddTrackForm {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AddTrackForm-inputs-wrapper {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddTrackForm-input-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  width: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.AddTrackForm-label {
+  display: block;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddTrackForm-input {
+  display: block;
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 50px;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.AddTrackForm-submit {
+  width: 100px;
+  height: 50px;
+  align-self: end;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+.AddTrackForm-submit:active {
+  border: solid 2px;
+  background-color: darkgray;
+}
+
+/* .App-table {
+  width: calc(60% + 100px);
+  margin-top: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+} */
+
+.TrackTable-header {
+  width: calc(60% + 100px);
+  margin-top: 10px;
+}
+
+.TrackTable-body {
+  border: solid 1px;
+  border-radius: 10px;
+  width: calc(60% + 100px);
+}
+
+th,
+td {
+  width: calc(100% / 3);
+}
+
+.TrackTable-body tr:hover {
+  background-color: lightgrey;
+}
+
+.TrackTable-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.button-edit {
+  color: blue;
+  margin-right: 10px;
+}
+
+.button-remove {
+  color: red;
 }
